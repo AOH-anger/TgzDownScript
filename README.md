@@ -27,5 +27,5 @@ Tgz文件自动下载/解压
 
 
 ## ERROR INFO
-1. 输出 <class 'pexpect.exceptions.EOF'> 
+1. 如果输出 <class 'pexpect.exceptions.EOF'> 
     - 请确认注意事项中需要自定义的信息是否填写以及填写是否正确

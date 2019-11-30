@@ -16,17 +16,16 @@ import datetime
 
 # tgz文件名称
 def _file_name(default_=True):
-    return 'mongodb-linux-x86_64-3.0.6.tgz'
     if default_:
         yesterday = datetime.date.today() + datetime.timedelta(-1)
-        file_name="chanzai.log.%s.tar.gz"%yesterday # 当天分析昨天的日志
+        file_name="log.%s.tar.gz"%yesterday # 当天分析昨天的日志
         return file_name
     else:
         return file_name  # 自定义文件名称
 
 # 解压后文件存放的文件夹名称
 def file2dir_name():
-    # chanzai.log.2019-11-21.tar.gz --> chanzai.log.2019-11-21
+    # log.2019-11-21.tar.gz --> log.2019-11-21
     return _file_name()[:-7]
 
 # 检查文件路径是否存在
